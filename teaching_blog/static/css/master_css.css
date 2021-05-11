@@ -1,6 +1,4 @@
-html,
-body,
-header,
+
 #intro {
     height: 100%;
 }
@@ -20,30 +18,30 @@ header,
   }
 
 .bg-light.scrolled{
-  background-color: #b2ebf2 !important;
+  background-color: grey-blue !important;
 }
 
 
 .navbar-light .navbar-nav .nav-link {
-    color: #ff5722;
+    color: grey-blue;
 }
 
 .navbar-light .nav-link {
-    color: #ff5722;
+    color: grey-blue;
 }
 
 
 .navbar-expand-lg {
-    background-color: #b2ebf2;
+    background-color:grey-blue;
   }
   @media (max-width: 768px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
+      background-color: grey-blue;
     }
   }
   @media (min-width: 800px) and (max-width: 850px) {
     .navbar:not(.top-nav-collapse) {
-      background-color: #b2ebf2;
+      background-color: grey-blue;
     }
   }
 
@@ -68,13 +66,7 @@ hr{
   transform: translate(0, -100%);
 }
 
-#event-section {
-    background:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://ak.picdn.net/shutterstock/videos/1012738781/thumb/1.jpg")no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-}
+
 
 .full-width{
   width: 100vw;
@@ -218,3 +210,13 @@ video {
   height: 100%;
 }
 /* responsive video */
+#class-time-table{
+  margin-left:auto !important;
+  margin-right:auto !important;
+}
+#class-time-table, #class-time-table th, #class-time-table td{
+  border:1px solid black;
+}
+#class-time-table td{
+  padding: 5px 10px;
+}

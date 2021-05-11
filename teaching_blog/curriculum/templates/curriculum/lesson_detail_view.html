@@ -26,9 +26,7 @@
         <hr style="color:#ff5722;">
 
         <!-- description -->
-        <h4 class="white-text my-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                  Deleniti
-                  consequuntur.</h4>
+
   </div>
 </header>
 {% endblock %}
@@ -60,7 +58,7 @@
                       {% if lessons.ppt %}
                       <p class="card-text">Download presentations from the lecture</p>
                       <a href="{{lessons.ppt.url}}" download>
-                      <button type="button" class="button-les"><span>Get Files</span></button>
+                      <button type="button" class="button-les"><span> Download Files</span></button>
                       </a>
                       {% else %}
                       <p class="card-text" > No PPT available</p>
@@ -77,7 +75,7 @@
                       {% if lessons.Notes %}
                       <p class="card-text">Download notes from the lecture</p>
                       <a href="{{lessons.Notes.url}}" download>
-                      <button type="button" class="button-les"><span>Get Files</span></button>
+                      <button type="button" class="button-les"><span>Download Files</span></button>
                       </a>
                       {% else %}
                       <p class="card-text">Notes not available</p>
@@ -93,7 +91,7 @@
                       <h5 class="card-title">Download Video</h5>
                       <p class="card-text">Download Video from the lecture</p>
                       <a href="{{lessons.video.url}}" download>
-                      <button type="button" class="button-les"><span>Get Files</span></button>
+                      <button type="button" class="button-les"><span>Download video</span></button>
                       </a>
                     </div>
                   </div>

@@ -5,14 +5,14 @@
     <meta charset="utf-8">
     <title>{%block title%}{%endblock%}</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <link rel="stylesheet" href="{% static 'css/master_css.css' %}">
+   <link rel="stylesheet" href="{% static 'css/master_css.css' %}">
 
   </head>
   <body>
     <!-- navigation bar -->
               <nav class="navbar navbar-expand-lg  navbar-light bg-light fixed-top scrolling-navbar">
                 <div class="container" >
-                      <a class="navbar-brand" href="{% url 'index' %}" style="color:#ff5722;" >Home</a>
+                      <a class="navbar-brand" href="{% url 'index' %}" style="color:grey-blue;" >Home</a>
                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#basicExampleNav"
                            aria-controls="basicExampleNav" aria-expanded="false" aria-label="Toggle navigation">
                            <span class="navbar-toggler-icon"></span>
@@ -20,7 +20,7 @@
                       <div class="collapse navbar-collapse" id="basicExampleNav" >
                         <ul class=" navbar-nav  mr-auto smooth-scroll " >
                                 <li class="nav-item">
-                                   <a class="nav-link" href="{% url 'curriculum:standard_list' %}">Curriculum</a>
+                                   <a class="nav-link" href="{% url 'curriculum:standard_list' %}">Courses</a>
                                 </li>
                                 {% if user.is_superuser %}
                                 <li class="nav-item ">
@@ -39,15 +39,7 @@
                                        <a class="nav-link" href="{% url 'register' %}">Register</span> </a>
                                     </li>
                                 {% endif %}
-                                <li class="nav-item">
-                                   <a class="nav-link" href="{% url 'contact' %}">Contact Us</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a class="nav-link" href="https://github.com/somvirs57/school_learning_management">GitHub</a>
-                                </li>
-                                <li class="nav-item">
-                                   <a class="nav-link" href="https://www.youtube.com/c/LearningBots">Youtube</a>
-                                </li>
+
 
                         </ul>
                       </div>
@@ -62,32 +54,25 @@
         {%endblock%}
     </div>
 
-    <footer class="page-footer" style="background-color:#b2ebf2;">
+    <footer class="page-footer" style="background-color:grey;">
       <div class="container">
         <div class="row mt-4">
                   <div class="col-md-4 mt-4">
-                            <h3>About Us</h3> <br>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                            <h4> Learning Management System</h4> <br>
+                            <p> Developed by: Abel T Flomo, Python Backend Developer.</p>
                   </div>
+
                   <div class="col-md-4 mt-4">
-                            <h3>Other Useful Stuff</h3>
+                            <h4> Contact: Abel T Flomo </h4>
                             <ul>
-                              <li>Item 1</li>
-                              <li>Item 2</li>
-                              <li>Item 3</li>
-                            </ul>
-                  </div>
-                  <div class="col-md-4 mt-4">
-                            <h3>Contact Us</h3>
-                            <ul>
-                              <li>Address: Nearest you, state, country</li>
-                              <li>info@gmail.com</li>
-                              <li>contact number</li>
+                              <li>Address: Casablanca-Settat, Morocco</li>
+                              <li> flomoabelt@gmail.com</li>
+                              <li> contact number: 0675562645 </li>
                             </ul>
                   </div>
         </div>
         <div class="footer-copyright text-center py-3">
-            <p>© 2020 Copyright: Learningbotshub.com</p>
+            <p>© 2021 Copyright: FinishLearn </p>
         </div>
       </div>
     </footer>
